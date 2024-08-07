@@ -1,2 +1,2 @@
 # Quick-Java
-Auther-Hello Bhupendra
+Auther-Hello Bhupendra Singh
