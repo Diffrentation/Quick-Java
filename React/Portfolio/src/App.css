@@ -1,0 +1,118 @@
+/* App.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Header Styles */
+.MuiAppBar-root {
+  background-color: #333;
+}
+
+.MuiToolbar-root {
+  display: flex;
+  justify-content: space-between;
+}
+
+.MuiTypography-root {
+  color: #fff;
+}
+
+.MuiButton-root {
+  color: #fff;
+  border-color: #fff;
+}
+
+.MuiButton-root:hover {
+  background-color: #555;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.hero-section h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section h5 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section .MuiButton-contained {
+  background-color: #fff;
+  color: #007bff;
+}
+
+/* About Section Styles */
+.about-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about-section h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Services Section Styles */
+.services-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.services-section h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.services-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact-section h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section .MuiTextField-root {
+  margin-bottom: 1rem;
+}
+
+.contact-section .MuiButton-contained {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Footer Styles */
+.footer {
+  padding: 2rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}

@@ -20,20 +20,42 @@ document.getElementById("generate-btn").addEventListener("click", (e) => {
   } else {
     alert("Please enter some text or URL");
   }
+  clearInput();
 });
+
+function clearInput() {
+  document.getElementById("text-input").value = "";
+}
 
 download.addEventListener("click", (e) => {
   e.preventDefault();
 
   // Get the generated QR code image
-  const img = qrCodeContainer.querySelector("img");
+  const QRimg = qrCodeContainer.querySelector("img");
 
-  if (img) {
-    const imgSrc = img.src; // Get the base64-encoded image source
+  if (QRimg) {
+    // Create a canvas context
+    let imgContext = canvas.getContext("2d");
 
-    // Set the href attribute to the image source and enable downloading
-    download.setAttribute("href", imgSrc);
-    download.setAttribute("download", "Image/png");
+    // Set canvas width and height to match the QR image
+    canvas.width = QRimg.width;
+    canvas.height = QRimg.height;
+
+    // Create a new Image object
+    let image = new Image();
+    image.src = QRimg.src; // Get the base64-encoded image source
+
+    image.onload = () => {
+      // Draw the image onto the canvas
+      imgContext.drawImage(image, 0, 0);
+
+      // Create a download link and set the image data as the href
+      let downloadLink = document.createElement("a");
+      downloadLink.href = canvas.toDataURL("image/jpeg", 0.9);
+      let input = prompt("Enter the QR image name to download");
+      downloadLink.download = `${input || "qrcode"}.html`;
+      downloadLink.click(); // Trigger the download event
+    };
   } else {
     alert("Please generate a QR code");
   }

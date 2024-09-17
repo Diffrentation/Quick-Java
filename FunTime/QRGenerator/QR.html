@@ -12,12 +12,13 @@
       <input type="text" id="text-input" placeholder="Enter text or URL" />
       <div class="btns">
         <button id="generate-btn">Generate QR Code</button>
-        <!-- <button href="" id="generate-btn" class="Download">
+        <button href="" id="generate-btn" class="Download">
           Download QR Code
-        </button> -->
+        </button>
       </div>
       <div class="QRimg">
         <div id="qrcode"></div>
+        <canvas id="canvas" style="display: none"></canvas>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>

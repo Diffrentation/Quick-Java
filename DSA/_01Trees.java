@@ -97,6 +97,16 @@ public class _01Trees {
         return totalSum;
 
     }
+    public static int height(Node root){
+        if(root==null){
+            return 0;
+        }
+        int leftNode=height(root.left);
+        int rightNode=height(root.right);
+        int totalHeight=Math.max(leftNode,rightNode)+1;
+        return totalHeight;
+    }
+    
     
     public static void main(String[] args) {
         int[] nodes = {1, 2, -1, 6, -1, 5, 7, -1, 4, -1, 9, 8};
