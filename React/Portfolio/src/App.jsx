@@ -6,6 +6,7 @@ import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import Auth from "./components/Auth";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<AboutSection />} />
         <Route path="/services" element={<ServicesSection />} />
         <Route path="/contact" element={<ContactSection />} />
+        <Route path="/auth" element={<Auth />} />
       </Routes>
       <Footer />
     </Router>
