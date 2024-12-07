@@ -31,27 +31,27 @@ const Header = () => {
         {/* Desktop Menu (Tabs visible only on lg screens) */}
         <ul className="hidden lg:flex gap-4 sm:gap-6 lg:gap-8 text-orange-700">
           <li className="hover:text-gray-200 cursor-pointer">
-            <Link to="/" className="xl:text-2xl">
+            <Link to="/" className="lg:text-2xl">
               Home
             </Link>
           </li>
           <li className="hover:text-gray-200 cursor-pointer">
-            <Link to="/about" className="xl:text-2xl">
+            <Link to="/about" className="lg:text-2xl">
               About
             </Link>
           </li>
           <li className="hover:text-gray-200 cursor-pointer">
-            <Link to="/services" className="xl:text-2xl">
+            <Link to="/services" className="lg:text-2xl">
               Services
             </Link>
           </li>
           <li className="hover:text-gray-200 cursor-pointer">
-            <Link to="/contact" className="xl:text-2xl">
+            <Link to="/contact" className="lg:text-2xl">
               Contact
             </Link>
           </li>
           <li className="hover:text-gray-200 cursor-pointer">
-            <Link to="/auth" className="xl:text-2xl">
+            <Link to="/auth" className="lg:text-2xl">
               Login
             </Link>
           </li>
